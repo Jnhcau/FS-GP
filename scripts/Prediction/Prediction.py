@@ -17,7 +17,6 @@ models = {
     "RF": (
         RandomForestRegressor(random_state=42),
         {
-            "n_estimators": [100],
             "max_depth": [3, 5, 10],
             "max_features": [0.1, 0.25, 0.5, 0.75, "sqrt", "log2", None]
         }
@@ -25,17 +24,13 @@ models = {
     "XGB": (
         XGBRegressor(objective="reg:squarederror", random_state=42),
         {
-            "n_estimators": [100],
             "max_depth": [3, 5, 10],
-            "learning_rate": [0.01, 0.1, 0.5, 1],
-            'max_features': [0.1, 0.5, 'sqrt', 'log2', None]
         }
     ),
     "LGBM": (
         LGBMRegressor(random_state=42),
         {
-            "n_estimators": [300, 500],
-            "num_leaves": [31, 63],
+            "max_depth": [3, 5, 10],
             "learning_rate": [0.05, 0.1]
         }
     ),
@@ -112,3 +107,4 @@ for name, folds in results.items():
     print(f"\n{name}:")
     print(f"  Outer folds Mean inner PCC = {np.mean(inner_pccs):.4f} ± {np.std(inner_pccs):.4f}")
     print(f"  Outer folds Test PCC = {np.mean(test_pccs):.4f} ± {np.std(test_pccs):.4f}")
+
