@@ -1,4 +1,5 @@
 # FS-GP
+![Main Figure](https://github.com/Jnhcau/FS-GP/blob/main/image.jpg)
 
 This repository provides the implementation for the study:
 
