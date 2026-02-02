@@ -24,3 +24,6 @@ This repository includes:
   Main script for running the nested cross-validation pipeline.
   It calls feature selection methods from `feature_selectors.py`,
   performs model training, hyperparameter tuning, and evaluation.
+
+- SHAP.py  
+  Script for computing and visualizing feature importance using SHAP values.
