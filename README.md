@@ -17,14 +17,17 @@ This repository includes:
 4. Model evaluation and performance analysis  
 5. SHAP-based feature importance visualization
 
-- feature_selectors.py  
+- FS/feature_selectors.py  
   Implements all feature selection methods, including:
   ElasticNet, LASSO, Random Forest, XGBoost, LightGBM, Mutual Information, and Boruta.
 
-- Prediction.py  
+- FS/Prediction.py  
   Main script for running the nested cross-validation pipeline.
   It calls feature selection methods from `feature_selectors.py`,
   performs model training, hyperparameter tuning, and evaluation.
 
-- SHAP.py  
-  Script for computing and visualizing feature importance using SHAP values.
+- FS/RRBLUP.R
+  Script for genomic prediction using RRBLUP with exported training/testing splits.
+
+- SHAP/SHAP.py  
+  Computes and visualizes feature importance using SHAP values.
