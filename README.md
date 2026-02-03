@@ -32,5 +32,5 @@ This repository includes:
 - SHAP/SHAP.py  
   Computes and visualizes feature importance using SHAP values.
 
-- SHAP/RF_model_Boruta.pkl
+- SHAP/RF_model_Boruta.pkl  
   Pre-trained Random Forest model using Boruta-selected features, provided to directly reproduce the SHAP analyses and prediction results.
