@@ -26,8 +26,11 @@ This repository includes:
   It calls feature selection methods from `feature_selectors.py`,
   performs model training, hyperparameter tuning, and evaluation.
 
-- FS/RRBLUP.R
+- FS/RRBLUP.R  
   Script for genomic prediction using RRBLUP with exported training/testing splits.
 
 - SHAP/SHAP.py  
   Computes and visualizes feature importance using SHAP values.
+
+- SHAP/RF_model_Boruta.pkl
+  Pre-trained Random Forest model using Boruta-selected features, provided to directly reproduce the SHAP analyses and prediction results.
