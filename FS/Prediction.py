@@ -75,7 +75,7 @@ models = {
 # ===========================
 # FS -> ML -> fold
 # ===========================
-data = pd.read_csv(r"D:\毕业\CAU毕业\发表文章\机器学习特征选择\投稿-ijms\scripts\transcriptome_data_sorted.csv",index_col=0)
+data = pd.read_csv("transcriptome_data_sorted.csv",index_col=0)
 X = data.iloc[:, :-1].values
 y = data.iloc[:, -1].values
 sample_ids = data.index
@@ -220,3 +220,4 @@ summary = df_results.groupby(["fs","model"]).agg(
 )
 
 print("\nSummary:\n", summary)
+
