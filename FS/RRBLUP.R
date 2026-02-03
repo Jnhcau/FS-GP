@@ -24,16 +24,14 @@ model <- mixed.solve(
 u    <- as.matrix(model$u)
 beta <- as.numeric(model$beta)
 
-## =============== 预测 ===============
 pred_test <- geno_test %*% u + beta
 pred_test <- as.numeric(pred_test)
 
-## =============== 评估 ===============
 pcc <- cor(pred_test, pheno_test, use = "complete.obs")
 
 cat("Test PCC =", round(pcc, 4), "\n")
 
-## =============== 保存结果 ===============
+## =============== result ===============
 out <- data.frame(
   ID = id_test,
   y_true = pheno_test,
@@ -41,3 +39,4 @@ out <- data.frame(
 )
 
 write.csv(out, "rrblup_prediction.csv", row.names = FALSE)
+
