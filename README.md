@@ -3,7 +3,7 @@
 
 This repository provides the implementation for the study:
 
-**"Benchmarking Feature Selection Methods and Prediction Models for Flowering Time Prediction in Plant Breeding" (IJMS)**
+**Du, Y.; Jia, N.; Wang, Y.; Li, R.; Lu, Y.; Würschum, T.; Zhu, X.; Liu, W. Benchmarking Feature Selection Methods and Prediction Models for Flowering Time Prediction in Maize. Int. J. Mol. Sci. 2026, 27, 1635. https://doi.org/10.3390/ijms27041635**
 
 The code supports full reproducibility of all experiments reported in the manuscript.
 
